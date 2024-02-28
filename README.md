@@ -33,6 +33,8 @@ STEP BY STEP
 
 - creo un seeder per riempire le mie colonne di dati, facendo il comando: php artisan make:seeder TrainSeeder (NomeModelSeeder);
 
+- nel mio seeder importo il mio Model, facendo use App/Models/NomeModel.
+
 - dopo aver riempito le colonne dei nostridatti allora facciamo il comando: php artisan db:seed --class=TrainSeeder; (questo esegue i seeder)
 
 
@@ -47,5 +49,6 @@ Requisiti Funzionali:
     - Creare due migrazioni per definire gli schemi del database per i modelli dei film e dei libri.
 - Creazione dei Seeder:
     - Creare i due seeder per popolare il database con dati di esempio per i film e i libri.
+    - Nei miei due seeder importo i miei due Model, facendo use App/Models/Book e App/Models/Movie
 - Creazione dei Controller:
     - Creare i due controller per gestire le rotte per la visualizzazione della lista completa dei film e dei libri, nonché per visualizzare i dettagli di ciascun film e libro.
