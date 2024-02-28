@@ -13,6 +13,22 @@ return new class extends Migration
     {
         Schema::create('movies', function (Blueprint $table) {
             $table->id();
+
+            // title -> varchar(64) NOT NULL
+            $table->string('title', 64);
+
+            // director -> varchar(64) NOT NULL
+            $table->string('director', 64);
+
+            // release_date -> varchar(64) NULL
+            $table->date('release_date')->nullable();
+
+            // nationality -> varchar(64) NULL
+            $table->string('nationality', 64)->nullable();
+
+            // genre -> varchar(64) NOT NULL
+            $table->string('genre', 64);
+
             $table->timestamps();
         });
     }
